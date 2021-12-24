@@ -1,0 +1,48 @@
+@media (max-width: 740px){
+    #header{
+        overflow: hidden;
+    }
+    #nav>li{
+        display: block;
+    }
+    #nav .subnav{
+        position: inherit;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: #FFF;
+    }
+    .subnav li a{
+        display: block;
+        width: 100%;    
+        padding: 13px 41px;
+    }
+    .search_btn{
+        display: none;
+    }
+    #menu_mobile{
+        display: block;
+    }
+    .slider_content{
+        display: none;
+    }
+    .content_img{
+        width: 100%;
+    }
+    .s_col_full{
+        width: 100%;
+    }
+    .contact_address{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+/* tablet & monile */
+@media (max-width: 1023px){
+    .buy_tickets{
+        padding: 15px 16px;
+    }
+    .form_control{
+        height: 48px;
+    }
+}

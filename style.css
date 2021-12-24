@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 15px;
+    font-family: Verdana,sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.m_t8{
+    margin-top: 8px;
+}
+
+.p_t16{
+    padding-top: 16px;
+}
+
+.p_8{
+    padding: 8px;
+}
+
+.p_lr8{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.p_lr16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.p_tb16{
+    padding-top: 16px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col_third{
+    float: left;
+    width: 33.333%;
+}
+
+.col_full{
+    width: 100%;
+}
+
+
+.col_half{
+    float: left;
+    width: 50%;
+}
+
+.p_lr8{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.p_r8{
+}
+
+.brw_clb{
+    background-color: #FFF;
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+.clear{
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+#main{
+
+}
+
+#header{
+    position:fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1;
+    height: 46px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav{
+
+}
+
+#nav>li:first-child{
+    display: inline-block;
+}
+
+#nav>li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a{
+    padding: 0 24px;
+    line-height: 46px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    display: block;
+}
+
+#nav .ti-angle-down{
+    font-size: 8px;
+}
+
+#nav>li:hover>a{
+    background-color: #ccc;
+    color: #000;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.subnav li a{
+    padding: 8px 16px;
+    color:#000;
+    width: 160px;
+}
+
+.subnav li:hover a{
+    background-color: #CCC; 
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#menu_mobile{
+    display: none;
+}
+
+#menu_mobile:hover{
+    background-color: #CCC;
+    color: #000;
+}
+
+#menu_mobile,
+.search_btn{
+    position: fixed;
+    right: 0;top: 0;
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+.search_btn:hover{
+    background-color: #f44336;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/asset/img/chicago.jpg') top center/ cover no-repeat;
+}
+
+.slider_content{
+    position: absolute;
+    bottom: 0;
+    color: #FFF;    
+    left: 50%;
+    transform: translate(-50%);
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.slider_heading{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.slider_sub{
+    margin: 15px 0;
+}
+
+#content{
+    
+}
+
+.content_container{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 10%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_heading,
+.content_sub,
+.content_paragrap{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content_heading{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+.content_sub{
+    opacity: 0.6;
+}
+
+.content_paragrap{
+    text-align: justify;
+}
+
+.content_img_container{
+   padding: 32px 0;
+   text-align: center;
+}
+
+.content_img{
+    float: left;
+    width: 33.333%;
+}
+
+.content_img_name{
+    margin: 15px 0;
+}
+
+.content_img_item{
+    width: 60%;
+    margin: 0 0 16px;
+    border-radius: 4px;
+}
+
+.tour_container{
+    background-color: #000;
+    color: #FFF;
+}
+
+.tour_table_container{
+    background-color: #FFF;
+    color: #757575;
+    margin-top: 30px;
+}
+
+.tour_table_container li{
+    border-bottom: 1px solid #CCC;
+    padding: 8px 16px;
+}
+
+.tour_table_container .sold_out{
+    margin: 0 16px;
+    padding: 4px 8px;
+    background-color: #f44336;
+    color: #FFF;
+}
+
+.tour_table_container .quantity{
+    float: right;
+    margin: 0 16px;
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.tour_img_item{
+    width: 100%;
+    display: block;
+}
+
+.tour_content{
+    padding: 16px;
+}
+
+.tour_heading,
+.tour_sub,
+.tour_paragrap,
+.buy_tickets{
+    margin-bottom: 15px;
+}
+
+.tour_heading{
+    font-weight: 400;
+}
+
+.tour_sub{
+    opacity: 0.6;
+}
+
+.buy_tickets{
+    padding: 11px 19px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buy_tickets:hover{
+    background-color: #CCC;
+    color: #000;
+}
+
+.tour_img_item:hover{
+    opacity: 0.6;
+}
+
+.modal{
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal_content{
+    background-color: #FFF;
+    width: 900px;
+    position: relative;
+    animation: modalFaceIn ease .5s;
+}
+
+.modal_close{
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.modal_close:hover{
+    background-color: #CCC;
+    color: #000;
+}
+
+.modal_header{
+    padding: 42px 16px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    background-color: #009688;
+    letter-spacing: 4px;
+}
+
+.modal_body p{
+    margin: 15px 0;
+}
+
+.modal_body .modal_input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #CCC;
+    height: 40.5px;
+
+}
+
+.modal_pay{
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    font-size: 15px;
+    border: none;
+    color: #FFF;
+    background-color: #009688;
+    height: 54.5px;
+}
+
+.modal_pay:hover{
+    background-color: #CCC;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal_footer{
+    margin: 16px 0;
+    float: right;
+}
+
+.modal_footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFaceIn{
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact_address i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.contact_address{
+    font-size: 18px;
+}
+
+.form_control{
+    height: 40.5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact_send{
+    float: right;
+    padding: 11px 16px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    margin: 16px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact_send:hover{
+    background-color: #CCC;
+    color: #000;
+}
+
+.map_container .map_item{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+#footer .footer_content i[class*="ti-"]{
+    font-size: 30px;
+}
+
+.footer_content i:hover{
+    opacity: 0.6;
+}
+
+.footer_medium{
+    margin: 15px 0;
+}
+
+.footer_medium a{
+    color: rgba(0, 0, 0, 0.6);
+}
